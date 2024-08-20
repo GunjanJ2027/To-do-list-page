@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-btn {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li.complete {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button.remove-btn {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.remove-btn:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    #todo-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #add-btn {
+        width: 100%;
+    }
+}
